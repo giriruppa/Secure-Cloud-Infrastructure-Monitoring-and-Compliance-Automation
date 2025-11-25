@@ -3,6 +3,7 @@
 # Tools: Azure + Terraform + Puppet + Nagios
 # Author: Ruppa Giridhar
 # Location: Central India
+# Changes you need to Vm passwords and connect your account to  Azure CLI
 ############################################################
 
 terraform {
@@ -174,7 +175,7 @@ resource "azurerm_linux_virtual_machine" "puppet_master_vm" {
   location            = azurerm_resource_group.puppet_rg.location
   size                = "Standard_D2s_v3"
   admin_username      = "azureuser"
-  admin_password      = "Giri493805@"
+  admin_password      = " "  (Your Vm Password)
   network_interface_ids = [azurerm_network_interface.puppet_nic.id]
 
   os_disk {
@@ -199,7 +200,7 @@ resource "azurerm_linux_virtual_machine" "puppet_agent_vm" {
   location            = azurerm_resource_group.puppet_rg.location
   size                = "Standard_B1s"
   admin_username      = "azureuser"
-  admin_password      = "Giri897830@"
+  admin_password      = "" ( (Your Vm Password))
   network_interface_ids = [azurerm_network_interface.agent_nic.id]
 
   os_disk {
@@ -230,3 +231,4 @@ output "puppet_agent_public_ip" {
   description = "Public IP of the Puppet Agent Node"
   value       = azurerm_public_ip.agent_public_ip.ip_address
 }
+
