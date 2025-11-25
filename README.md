@@ -158,6 +158,6 @@ If you want to collaborate or improve this project:
 📩 **[ruppagiri116@gmail.com](mailto:ruppagiri116@gmail.com)**
 
 ---
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/b4709336-d8d6-4420-b2b0-087df823895c" />
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/b4709336-d8d6-4420-b2b0-087df823895c" />
 
 
